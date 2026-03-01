@@ -7,29 +7,20 @@
     <style>
         :root { --gold: #d4af37; --black: #0a0a0a; --dark-grey: #1a1a1a; --text: #e0e0e0; }
         body { background-color: var(--black); color: var(--text); font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; padding: 0; }
-        
-        /* Language Bar */
         .lang-nav { background: #111; padding: 10px; text-align: center; border-bottom: 1px solid #333; font-size: 0.8rem; }
         .lang-nav a { color: var(--gold); text-decoration: none; margin: 0 10px; font-weight: bold; }
-        
         header { width: 100%; padding: 50px 20px; text-align: center; background: linear-gradient(180deg, #151515 0%, #0a0a0a 100%); }
         h1 { color: var(--gold); letter-spacing: 5px; text-transform: uppercase; margin: 0; font-size: 1.8rem; }
         .container { width: 90%; max-width: 900px; margin: auto; padding-bottom: 60px; }
-        
         .section-title { color: var(--gold); border-left: 3px solid var(--gold); padding-left: 15px; margin: 40px 0 20px; text-transform: uppercase; font-size: 1rem; letter-spacing: 2px; }
-        
-        /* Grid for Cards */
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
         .card { background: var(--dark-grey); border: 1px solid #333; border-radius: 10px; padding: 20px; }
-        
         .link-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #2a2a2a; text-decoration: none; color: var(--text); font-size: 0.9rem; }
         .link-item:last-child { border-bottom: none; }
         .link-item strong { color: var(--gold); }
         .badge { font-size: 0.65rem; background: #222; padding: 3px 7px; border-radius: 4px; color: var(--gold); border: 1px solid #444; }
-
         .cta-box { background: linear-gradient(135deg, #1a1a1a 0%, #000 100%); border: 2px solid var(--gold); padding: 40px; text-align: center; border-radius: 15px; margin-top: 40px; }
         .btn { display: inline-block; background: var(--gold); color: #000; padding: 15px 35px; text-decoration: none; font-weight: bold; border-radius: 5px; margin-top: 20px; text-transform: uppercase; }
-        
         footer { padding: 40px; text-align: center; font-size: 0.7rem; color: #555; border-top: 1px solid #222; }
     </style>
 </head>
@@ -52,15 +43,13 @@
                 <p style="color:var(--gold); font-size: 0.8rem; margin-top: 0;">UNITED STATES</p>
                 <a href="https://www.signatureaviation.com/locations/TEB" target="_blank" class="link-item"><span><strong>Teterboro</strong> (KTEB)</span> <span class="badge">NYC</span></a>
                 <a href="https://www.atlanticaviation.com/location/OPF" target="_blank" class="link-item"><span><strong>Opa-Locka</strong> (KOPF)</span> <span class="badge">MIA</span></a>
-                <a href="https://www.signatureaviation.com/locations/VNY" target="_blank" class="link-item"><span><strong>Van Nuys</strong> (KVNY)</span> <span class="badge">LAX</span></a>
                 <a href="https://www.signatureaviation.com/locations/MKC" target="_blank" class="link-item"><span><strong>Charles Wheeler</strong> (KMKC)</span> <span class="badge">KC</span></a>
             </div>
             <div class="card">
-                <p style="color:var(--gold); font-size: 0.8rem; margin-top: 0;">MEXICO & CANADA</p>
+                <p style="color:var(--gold); font-size: 0.8rem; margin-top: 0;">CANADA & MEXICO</p>
+                <a href="https://skyservice.com/locations/vancouver-yvr/" target="_blank" class="link-item"><span><strong>Vancouver</strong> (CYVR)</span> <span class="badge">Vancouver</span></a>
+                <a href="https://skyservice.com/locations/toronto-yyz/" target="_blank" class="link-item"><span><strong>Toronto</strong> (CYYZ)</span> <span class="badge">Toronto</span></a>
                 <a href="https://www.iccs.com.mx/" target="_blank" class="link-item"><span><strong>Toluca</strong> (MMTO)</span> <span class="badge">MEX City</span></a>
-                <a href="https://www.iccs.com.mx/" target="_blank" class="link-item"><span><strong>Monterrey</strong> (MMAN)</span> <span class="badge">MTY</span></a>
-                <a href="https://skyservice.com/locations/toronto-yyz/" target="_blank" class="link-item"><span><strong>Skyservice</strong> (CYYZ)</span> <span class="badge">Toronto</span></a>
-                <a href="https://skyservice.com/locations/vancouver-yvr/" target="_blank" class="link-item"><span><strong>Skyservice</strong> (CYVR)</span> <span class="badge">Vancouver</span></a>
             </div>
         </div>
 
@@ -69,14 +58,14 @@
             <div class="card">
                 <p style="color:var(--gold); font-size: 0.8rem; margin-top: 0;">STADIUM TRANSFERS & EVENTS</p>
                 <a href="https://www.blade.com/p/gamedays" target="_blank" class="link-item"><span><strong>Blade</strong> Stadium Shuttles</span> <span class="badge">Air Taxi</span></a>
-                <a href="#" class="link-item"><span><strong>VIP Suite Access</strong></span> <span class="badge">Hospitality</span></a>
-                <a href="#" class="link-item"><span><strong>Social & After-Parties</strong></span> <span class="badge">Elite Entry</span></a>
+                <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/hospitality" target="_blank" class="link-item"><span><strong>VIP Suite Access</strong></span> <span class="badge">Hospitality</span></a>
+                <a href="https://www.jetex.com/services/concierge/" target="_blank" class="link-item"><span><strong>Social & After-Parties</strong></span> <span class="badge">Elite Entry</span></a>
             </div>
             <div class="card">
-                <p style="color:var(--gold); font-size: 0.8rem; margin-top: 0;">LUXURY RELOCATION</p>
-                <a href="#" class="link-item"><span><strong>The Ritz-Carlton</strong> Collection</span> <span class="badge">Residences</span></a>
-                <a href="#" class="link-item"><span><strong>Aman</strong> Private Sanctuary</span> <span class="badge">Hotels</span></a>
-                <a href="#" class="link-item"><span><strong>Inter-City Logistics</strong></span> <span class="badge">Relocation</span></a>
+                <p style="color:var(--gold); font-size: 0.8rem; margin-top: 0;">LUXURY RELOCATION & HOTELS</p>
+                <a href="https://www.ritzcarlton.com/en/hotels/vancouver" target="_blank" class="link-item"><span><strong>The Ritz-Carlton</strong> Vancouver</span> <span class="badge">Residences</span></a>
+                <a href="https://www.aman.com/hotels/aman-new-york" target="_blank" class="link-item"><span><strong>Aman</strong> Private Sanctuary</span> <span class="badge">Hotels</span></a>
+                <a href="https://www.netjets.com" target="_blank" class="link-item"><span><strong>Inter-City Logistics</strong></span> <span class="badge">Relocation</span></a>
             </div>
         </div>
 
@@ -91,7 +80,7 @@
 
     <footer>
         <p>© 2026 MARIA MYERS | INDEPENDENT LOGISTICS ADVISOR</p>
-        <p>Serving Corporate Flight Departments & UHNWI Principals</p>
+        <p>Verified Partner Directory • High-Net-Worth Resource</p>
     </footer>
 
 </body>
