@@ -3,183 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIP World Cup 2026 | Digital Concierge</title>
-    <meta name="description" content="Global VIP Logistics for World Cup 2026. Self-service booking for private jets, helicopters, and luxury transfers.">
-    <meta name="keywords" content="hospitality-management, luxury-travel, world-cup-2026, vip-logistics, private-jet-charter, fbo-directory, suite-inventory, fifawc2026, travel-concierge, corporate-hospitality, blade-aviation, helinet-aviation, fly-flapper, wings-air-charter, stadium-transfers-2026, vvip-helicopter-charter, air-taxi-logistics, leader-worldwide, arrowhead-stadium-vip, kansas-city-fbo, jetex-dubai, flapper-brazil">
-    
+    <title>VIP World Cup 2026 | Global Digital Concierge</title>
     <style>
-        :root {
-            --gold: #d4af37;
-            --black: #0a0a0a;
-            --dark-grey: #1a1a1a;
-            --text: #e0e0e0;
-        }
-        body {
-            background-color: var(--black);
-            color: var(--text);
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        header {
-            width: 100%;
-            padding: 60px 20px;
-            text-align: center;
-            border-bottom: 1px solid #333;
-            background: linear-gradient(180deg, #111 0%, #0a0a0a 100%);
-        }
-        h1 {
-            color: var(--gold);
-            letter-spacing: 4px;
-            text-transform: uppercase;
-            margin: 0;
-            font-size: 2.2rem;
-        }
-        .subtitle {
-            color: #888;
-            letter-spacing: 1px;
-            margin-top: 10px;
-            font-size: 0.9rem;
-        }
-        .container {
-            width: 90%;
-            max-width: 800px;
-            padding: 40px 0;
-        }
-        .section-title {
-            color: var(--gold);
-            border-left: 3px solid var(--gold);
-            padding-left: 15px;
-            margin-bottom: 25px;
-            text-transform: uppercase;
-            font-size: 1.1rem;
-            letter-spacing: 1px;
-        }
-        .card {
-            background: var(--dark-grey);
-            border: 1px solid #333;
-            border-radius: 12px;
-            padding: 25px;
-            margin-bottom: 30px;
-            transition: transform 0.3s ease;
-        }
-        .card:hover {
-            border-color: var(--gold);
-        }
-        .link-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 0;
-            border-bottom: 1px solid #2a2a2a;
-            text-decoration: none;
-            color: var(--text);
-        }
+        :root { --gold: #d4af37; --black: #0a0a0a; --dark-grey: #1a1a1a; --text: #e0e0e0; }
+        body { background-color: var(--black); color: var(--text); font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; padding: 0; }
+        
+        /* Language Bar */
+        .lang-nav { background: #111; padding: 10px; text-align: center; border-bottom: 1px solid #333; font-size: 0.8rem; }
+        .lang-nav a { color: var(--gold); text-decoration: none; margin: 0 10px; font-weight: bold; }
+        
+        header { width: 100%; padding: 50px 20px; text-align: center; background: linear-gradient(180deg, #151515 0%, #0a0a0a 100%); }
+        h1 { color: var(--gold); letter-spacing: 5px; text-transform: uppercase; margin: 0; font-size: 1.8rem; }
+        .container { width: 90%; max-width: 900px; margin: auto; padding-bottom: 60px; }
+        
+        .section-title { color: var(--gold); border-left: 3px solid var(--gold); padding-left: 15px; margin: 40px 0 20px; text-transform: uppercase; font-size: 1rem; letter-spacing: 2px; }
+        
+        /* Grid for Cards */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: var(--dark-grey); border: 1px solid #333; border-radius: 10px; padding: 20px; }
+        
+        .link-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #2a2a2a; text-decoration: none; color: var(--text); font-size: 0.9rem; }
         .link-item:last-child { border-bottom: none; }
         .link-item strong { color: var(--gold); }
-        .link-item:hover { color: #fff; }
+        .badge { font-size: 0.65rem; background: #222; padding: 3px 7px; border-radius: 4px; color: var(--gold); border: 1px solid #444; }
+
+        .cta-box { background: linear-gradient(135deg, #1a1a1a 0%, #000 100%); border: 2px solid var(--gold); padding: 40px; text-align: center; border-radius: 15px; margin-top: 40px; }
+        .btn { display: inline-block; background: var(--gold); color: #000; padding: 15px 35px; text-decoration: none; font-weight: bold; border-radius: 5px; margin-top: 20px; text-transform: uppercase; }
         
-        .badge {
-            font-size: 0.7rem;
-            background: #333;
-            padding: 4px 8px;
-            border-radius: 4px;
-            color: var(--gold);
-            text-transform: uppercase;
-        }
-        .cta-box {
-            background: linear-gradient(135deg, #1a1a1a 0%, #000 100%);
-            border: 1px solid var(--gold);
-            padding: 40px;
-            text-align: center;
-            border-radius: 15px;
-            margin-top: 20px;
-        }
-        .btn {
-            display: inline-block;
-            background: var(--gold);
-            color: #000;
-            padding: 15px 40px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            margin-top: 20px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        footer {
-            padding: 40px;
-            text-align: center;
-            font-size: 0.8rem;
-            color: #555;
-        }
+        footer { padding: 40px; text-align: center; font-size: 0.7rem; color: #555; border-top: 1px solid #222; }
     </style>
 </head>
 <body>
 
+    <nav class="lang-nav">
+        <a href="#">ENGLISH</a> | <a href="#">ESPAÑOL</a> | <a href="#">PORTUGUÊS</a> | <a href="#">FRANÇAIS</a>
+    </nav>
+
     <header>
         <h1>World Cup 2026</h1>
-        <div class="subtitle">GLOBAL VIP LOGISTICS • DIGITAL CONCIERGE</div>
-        <p style="margin-top: 20px; font-size: 0.8rem; color: var(--gold);">EN | ES | PT</p>
+        <p style="color: #888; letter-spacing: 2px; font-size: 0.8rem; margin-top: 10px;">TRI-NATION VIP LOGISTICS & LIFESTYLE HUB</p>
     </header>
 
     <div class="container">
         
-        <p style="text-align: center; margin-bottom: 40px; font-style: italic; color: #aaa;">
-            "Strictly Self-Service Architecture for UHNWI Flight Departments & Corporate Hospitality."
-        </p>
-
-        <h2 class="section-title">✈️ Private Aviation & FBO Hubs</h2>
-        <div class="card">
-            <a href="https://www.jetex.com/" target="_blank" class="link-item">
-                <span><strong>Jetex</strong> • Dubai & Global</span>
-                <span class="badge">Book Terminal</span>
-            </a>
-            <a href="https://www.signatureaviation.com/locations/TEB" target="_blank" class="link-item">
-                <span><strong>Signature</strong> • Teterboro (KTEB)</span>
-                <span class="badge">New York</span>
-            </a>
-            <a href="https://www.atlanticaviation.com/location/OPF" target="_blank" class="link-item">
-                <span><strong>Atlantic</strong> • Opa-Locka (KOPF)</span>
-                <span class="badge">Miami</span>
-            </a>
-            <a href="https://www.signatureaviation.com/locations/VNY" target="_blank" class="link-item">
-                <span><strong>Signature</strong> • Van Nuys (KVNY)</span>
-                <span class="badge">Los Angeles</span>
-            </a>
+        <h2 class="section-title">✈️ Global FBO & Arrival Terminals</h2>
+        <div class="grid">
+            <div class="card">
+                <p style="color:var(--gold); font-size: 0.8rem; margin-top: 0;">UNITED STATES</p>
+                <a href="https://www.signatureaviation.com/locations/TEB" target="_blank" class="link-item"><span><strong>Teterboro</strong> (KTEB)</span> <span class="badge">NYC</span></a>
+                <a href="https://www.atlanticaviation.com/location/OPF" target="_blank" class="link-item"><span><strong>Opa-Locka</strong> (KOPF)</span> <span class="badge">MIA</span></a>
+                <a href="https://www.signatureaviation.com/locations/VNY" target="_blank" class="link-item"><span><strong>Van Nuys</strong> (KVNY)</span> <span class="badge">LAX</span></a>
+                <a href="https://www.signatureaviation.com/locations/MKC" target="_blank" class="link-item"><span><strong>Charles Wheeler</strong> (KMKC)</span> <span class="badge">KC</span></a>
+            </div>
+            <div class="card">
+                <p style="color:var(--gold); font-size: 0.8rem; margin-top: 0;">MEXICO & CANADA</p>
+                <a href="https://www.iccs.com.mx/" target="_blank" class="link-item"><span><strong>Toluca</strong> (MMTO)</span> <span class="badge">MEX City</span></a>
+                <a href="https://www.iccs.com.mx/" target="_blank" class="link-item"><span><strong>Monterrey</strong> (MMAN)</span> <span class="badge">MTY</span></a>
+                <a href="https://skyservice.com/locations/toronto-yyz/" target="_blank" class="link-item"><span><strong>Skyservice</strong> (CYYZ)</span> <span class="badge">Toronto</span></a>
+                <a href="https://skyservice.com/locations/vancouver-yvr/" target="_blank" class="link-item"><span><strong>Skyservice</strong> (CYVR)</span> <span class="badge">Vancouver</span></a>
+            </div>
         </div>
 
-        <h2 class="section-title">🚁 Stadium & Ground Logistics</h2>
-        <div class="card">
-            <a href="https://www.blade.com/p/gamedays" target="_blank" class="link-item">
-                <span><strong>Blade</strong> • Sky-Shuttle</span>
-                <span class="badge">NYC / LA / MIA</span>
-            </a>
-            <a href="https://flyflapper.com/" target="_blank" class="link-item">
-                <span><strong>Flapper</strong> • Air Taxi</span>
-                <span class="badge">Mexico / Brazil</span>
-            </a>
-            <a href="https://www.leaderlimo.com/" target="_blank" class="link-item">
-                <span><strong>Leader Worldwide</strong> • Chauffeur</span>
-                <span class="badge">Kansas City</span>
-            </a>
+        <h2 class="section-title">💎 Elite Stays & Matchday Social</h2>
+        <div class="grid">
+            <div class="card">
+                <p style="color:var(--gold); font-size: 0.8rem; margin-top: 0;">STADIUM TRANSFERS & EVENTS</p>
+                <a href="https://www.blade.com/p/gamedays" target="_blank" class="link-item"><span><strong>Blade</strong> Stadium Shuttles</span> <span class="badge">Air Taxi</span></a>
+                <a href="#" class="link-item"><span><strong>VIP Suite Access</strong></span> <span class="badge">Hospitality</span></a>
+                <a href="#" class="link-item"><span><strong>Social & After-Parties</strong></span> <span class="badge">Elite Entry</span></a>
+            </div>
+            <div class="card">
+                <p style="color:var(--gold); font-size: 0.8rem; margin-top: 0;">LUXURY RELOCATION</p>
+                <a href="#" class="link-item"><span><strong>The Ritz-Carlton</strong> Collection</span> <span class="badge">Residences</span></a>
+                <a href="#" class="link-item"><span><strong>Aman</strong> Private Sanctuary</span> <span class="badge">Hotels</span></a>
+                <a href="#" class="link-item"><span><strong>Inter-City Logistics</strong></span> <span class="badge">Relocation</span></a>
+            </div>
         </div>
 
         <div class="cta-box">
-            <h2 style="color: var(--gold); margin: 0;">THE 2026 LOGISTICS BRIEF</h2>
-            <p style="color: #888; margin-top: 10px;">Weekly intelligence on suite inventory and FBO slot availability.</p>
-            <a href="#" class="btn">Access the Brief</a>
-            <p style="font-size: 0.7rem; margin-top: 15px; color: #555;">NO PHONE CALLS. PURELY DIGITAL COORDINATION.</p>
+            <h2 style="color: var(--gold); margin: 0; font-size: 1.5rem;">ACCESS THE 2026 INTELLIGENCE BRIEF</h2>
+            <p style="color: #888; margin-top: 15px;">Official Matchday Guides, FBO Slot Alerts, and Exclusive Suite Availability.</p>
+            <a href="#" class="btn">SIGN UP FOR WC2026 UPDATES</a>
+            <p style="font-size: 0.6rem; margin-top: 20px; color: #444; text-transform: uppercase; letter-spacing: 1px;">Strictly Professional Coordination • No Phone Calls</p>
         </div>
 
     </div>
 
     <footer>
         <p>© 2026 MARIA MYERS | INDEPENDENT LOGISTICS ADVISOR</p>
-        <p>Verified Partner Directory • High-Net-Worth Resource</p>
+        <p>Serving Corporate Flight Departments & UHNWI Principals</p>
     </footer>
 
 </body>
